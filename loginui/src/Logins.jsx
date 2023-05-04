@@ -3,10 +3,7 @@ import { useState } from "react";
 import { Grid,Paper, Avatar, TextField, Button, Typography,Link } from '@material-ui/core'
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-// import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
-// import Checkbox from '@material-ui/core/Checkbox';
-
-const Logins = ({ users, setIsLoggedIn, user, setUser,handleChange }) => {
+const Logins = ({ users, setIsLoggedIn, user, setUser }) => {
     let [wrongUser, setWrongUser] = useState(false);
 
     function handleChange(e) {
@@ -33,7 +30,7 @@ const Logins = ({ users, setIsLoggedIn, user, setUser,handleChange }) => {
     }
 
 
-    const paperStyle={padding :20,height:'80vh',width:410, margin:"20px auto"}
+    const paperStyle={padding :20,height:'90vh',width:410, margin:"20px auto"}
     const avatarStyle={backgroundColor:'#9c27b0'}
     const btnstyle={margin:'8px 0'}
 
@@ -74,7 +71,7 @@ const Logins = ({ users, setIsLoggedIn, user, setUser,handleChange }) => {
 
                 </Typography>
                 <Typography style={{textAlign:'center', marginTop:'50px'}}> 
-                <Link href="#" onClick={()=>handleChange("event",1)}>
+                <Link href="#" >
                 Copyright © Your Website 2023.
                 </Link>
                 </Typography>
